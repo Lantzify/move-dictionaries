@@ -1,0 +1,61 @@
+﻿<div ng-controller="moveDictionaries.controller as vm">
+	<umb-editor-view>
+
+		<umb-editor-header name="model.title"
+						   name-locked="true"
+						   hide-alias="true"
+						   hide-icon="true"
+						   hide-description="true">
+		</umb-editor-header>
+
+		<umb-editor-container>
+			<umb-box>
+				<umb-box-content>
+
+					<p>Choose where to move <strong>{{vm.dictionary.name}}</strong> to in the tree structure below</p>
+
+					<ul class="umb-tree hide-options">
+						<li >
+							<button class="btn-link w-100" ng-click="vm.toggleSelect(vm.rootKey)" ng-disabled="vm.dictionary.parentId == vm.rootKey">
+								<div class="umb-tree-root">
+									<h5 style="cursor:pointer;">
+										<a class="umb-tree-root-link umb-outline">
+											<umb-icon ng-if="vm.selectedKey == vm.rootKey" icon="icon-check" class="umb-tree-icon"></umb-icon>
+											Dictionary
+										</a>
+									</h5>
+								</div>
+							</button>
+						</li>
+						<li class="umb-animated umb-tree-item" ng-repeat="dictionary in vm.dictionaries" ng-click="vm.toggleSelect(dictionary.key)" ng-if="dictionary.id != vm.dictionary.id && dictionary.key != vm.dictionary.parentId" style="cursor:pointer;">
+							<div class="umb-tree-item__inner">
+								<umb-icon ng-if="vm.selectedKey != dictionary.key" icon="icon-book-alt" class="umb-tree-icon"></umb-icon>
+								<umb-icon ng-if="vm.selectedKey == dictionary.key" icon="icon-check" class="umb-tree-icon"></umb-icon>
+								<a class="umb-tree-item__label">{{dictionary.name}}</a>
+							</div>
+						</li>
+					</ul>
+				</umb-box-content>
+			</umb-box>
+		</umb-editor-container>
+
+		<umb-editor-footer>
+			<umb-editor-footer-content-right>
+				<umb-button type="button"
+							button-style="link"
+							label-key="general_close"
+							shortcut="esc"
+							action="vm.close()">
+				</umb-button>
+				<umb-button type="button"
+							button-style="success"
+							state="vm.buttonState"
+							disabled="vm.selectedKey == ''"
+							label-key="general_submit"
+							action="vm.submit(model)">
+				</umb-button>
+			</umb-editor-footer-content-right>
+		</umb-editor-footer>
+
+	</umb-editor-view>
+</div>
