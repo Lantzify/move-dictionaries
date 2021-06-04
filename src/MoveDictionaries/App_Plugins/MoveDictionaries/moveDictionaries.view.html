@@ -27,7 +27,7 @@
 								</div>
 							</button>
 						</li>
-						<li class="umb-animated umb-tree-item" ng-repeat="dictionary in vm.dictionaries" ng-click="vm.toggleSelect(dictionary.key)" ng-if="dictionary.id != vm.dictionary.id && dictionary.key != vm.dictionary.parentId" style="cursor:pointer;">
+						<li class="umb-animated umb-tree-item" ng-repeat="dictionary in vm.dictionaries" ng-click="vm.toggleSelect(dictionary.key)" ng-if="dictionary.id != vm.dictionary.id && dictionary.parentId != vm.dictionary.key" style="cursor:pointer;">
 							<div class="umb-tree-item__inner">
 								<umb-icon ng-if="vm.selectedKey != dictionary.key" icon="icon-book-alt" class="umb-tree-icon"></umb-icon>
 								<umb-icon ng-if="vm.selectedKey == dictionary.key" icon="icon-check" class="umb-tree-icon"></umb-icon>
