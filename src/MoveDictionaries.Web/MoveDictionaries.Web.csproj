@@ -270,6 +270,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\MoveDictionaries\moveDictionariesManager.js" />
     <Content Include="App_Plugins\OsmMaps\assets\css\osmmaps.css" />
     <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\layers-2x.png" />
