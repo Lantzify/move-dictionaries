@@ -1,0 +1,7 @@
+{
+    "source": "MoveDictionaries.Core/App_Plugins/MoveDictionaries",
+    "sites": [
+        "MoveDictionaries.v8.Web/App_Plugins/MoveDictionaries",
+        "MoveDictionaries.v9.Web/App_Plugins/MoveDictionaries"
+    ]
+}

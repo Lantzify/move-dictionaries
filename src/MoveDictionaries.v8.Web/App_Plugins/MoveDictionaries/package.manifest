@@ -1,0 +1,6 @@
+{
+	"javascript": [
+		"~/App_Plugins/MoveDictionaries/moveDictionariesManager.js",
+		"~/App_Plugins/MoveDictionaries/moveDictionaries.controller.js"
+	]
+}
