@@ -2,6 +2,7 @@
 
 Hindsight is 20/20 move existing dictionaries instead of recreating them! Move dictionaries is a package for umbraco v8 that allows you to move dictionaries.
 
+![version](https://img.shields.io/nuget/v/MoveDictionaries?label=version)
 [![Nuget](https://img.shields.io/nuget/dt/MoveDictionaries?color=2346c018&logo=Nuget)](https://www.nuget.org/packages/MoveDictionaries)
 
 ![preview](assets/move.gif)
