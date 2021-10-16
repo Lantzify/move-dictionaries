@@ -10,13 +10,18 @@ Hindsight is 20/20 move existing dictionaries instead of recreating them! Move d
 
 ## Installation
 
-You can install MoveDictionaries via Nuget
-
+### Umbraco v8
+You can install MoveDictionaries for umbraco v8 via Nuget Or via Umbraco backoffice!
 ```
 PM> Install-Package MoveDictionaries
 ```
 
-Or via Umbraco backoffice!
+### Umbraco v9
+You can install MoveDictionaries for umbraco v9 via Nuget.
+```
+PM> dotnet add package MoveDictionaries
+```
+
 
 ## Contributing
 
