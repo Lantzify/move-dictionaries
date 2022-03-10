@@ -3,7 +3,7 @@ using Umbraco.Cms.Core.Events;
 using MoveDictionaries.Core.Helpers;
 using Umbraco.Cms.Core.Notifications;
 
-namespace MoveDictionaries.Core.Migrations
+namespace MoveDictionaries.Core.Compositions
 {
 	public class MenuRenderingNotificationHandler : INotificationHandler<MenuRenderingNotification>
 	{
