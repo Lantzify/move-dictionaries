@@ -26,6 +26,9 @@ PM> dotnet add package MoveDictionaries
 ## Contributing
 
 If you would like to help me improve this package, feel free to create a pull request!
+Login details:
+- Email: admin@admin.com 
+- Password: password123
 
 ## Issues
 
