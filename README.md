@@ -1,3 +1,7 @@
+## ⚠️ This repository is no longer maintained
+
+> [This got added in Umbraco v9.5](https://our.umbraco.com/download/releases/950)
+
 # Move dictionaries
 
 Hindsight is 20/20 move existing dictionaries instead of recreating them! Move dictionaries is a package for umbraco v8 that allows you to move dictionaries.
